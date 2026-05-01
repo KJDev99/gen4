@@ -553,6 +553,8 @@ body {
 /* ===== CONTENT BLOCKS ===== */
 .info-content {
   min-width: 0;
+  background: white;
+  padding: 26px 40px;
 }
 
 .content-block {
@@ -1400,6 +1402,12 @@ body {
   .nav-menu {
     display: none;
   }
+
+  .info-content {
+    min-width: 0;
+    padding: 10px 15px;
+  }
+
 
   .nav-menu.open {
     display: flex;
