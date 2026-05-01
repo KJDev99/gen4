@@ -829,11 +829,12 @@ body {
 /* ===== STICKY SIDEBAR ===== */
 .info-sidebar {
   width: var(--sidebar-w);
+  align-self: start;
 }
 
 .sidebar-nav {
-  position: sticky;
-  top: var(--sidebar-top);
+  /* position: sticky;
+  top: 100px; */
   background: var(--clr-white);
   border: 1.5px solid var(--clr-border);
   border-radius: var(--radius-md);
@@ -884,7 +885,6 @@ body {
   color: var(--clr-primary-dark);
   background: var(--clr-primary-bg);
   border-left-color: var(--clr-primary);
-  font-weight: 600;
 }
 
 .sidebar-cta {
@@ -1338,11 +1338,26 @@ body {
 }
 
 @media (max-width: 860px) {
+  .sidebar-nav {
+    display: none;
+  }
+
   .hero .container {
     flex-direction: column;
     padding-top: 48px;
     padding-bottom: 60px;
     gap: 40px;
+  }
+
+  .code-window-wrap {
+    width: 90%;
+    margin: auto;
+  }
+
+  .code-window-wrap>img {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 10px;
   }
 
   .hero-left {
